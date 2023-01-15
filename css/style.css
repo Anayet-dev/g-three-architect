@@ -8,12 +8,12 @@
     --tertiary-text: #727272;
     --btn-bg: #FF900E;
     --btn-text: #fff;
-    --section-bg:rgba(255, 144, 14, 0.1);
+    --section-bg: rgba(255, 144, 14, 0.1);
     --work-sans: 'Work Sans', sans-serif;
 }
 
 /* Css reset code */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,8 +25,9 @@ html {
 }
 
 /* Common styles */
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--primary-text);
     font-weight: 700;
 }
@@ -63,12 +64,14 @@ p {
     height: 100%;
 }
 
-a, .copyright-text {
+a,
+.copyright-text {
     color: var(--secondary-text);
     font-size: 2rem;
 }
 
-.header, .footer {
+.header,
+.footer {
     background-color: var(--section-bg);
 }
 
@@ -100,6 +103,7 @@ section {
 .header {
     padding: 5rem 0;
 }
+
 .navbar {
     justify-content: space-between;
 }
@@ -162,40 +166,41 @@ section {
     color: var(--btn-bg);
 }
 
- /* -------------------------------------------
+/* -------------------------------------------
         feature section Styles
  --------------------------------------------*/
- .feature-section {
+.feature-section {
     position: relative;
     padding-bottom: 1rem;
 }
- .feature-section .flex {
+
+.feature-section .flex {
     align-items: flex-start;
     gap: 5.4rem;
- }
+}
 
- article {
+article {
     padding: 2rem;
     box-shadow: 0px .4rem 3rem rgba(0, 0, 0, 0.06);
     border-radius: .8rem;
     margin-top: 1rem;
- }
+}
 
- .articles h2 {
+.articles h2 {
     border-left: .5rem solid var(--btn-bg);
     padding-left: 2rem;
- }
+}
 
- .article-first-child {
+.article-first-child {
     margin-top: 3rem;
- }
+}
 
- .btn-large {
+.btn-large {
     padding: 4.8rem 4.2rem;
     position: absolute;
     bottom: -5rem;
     left: 50%;
- }
+}
 
 .btn-large .large-text {
     font-size: 6.5rem;
@@ -211,75 +216,129 @@ button .small-text {
 /* -------------------------------------------
         Some facts section Styles
  --------------------------------------------*/
- .fact-description {
+.fact-description {
     width: 50%;
- }
+}
 
- .fact-boxes {
+.fact-boxes {
     justify-content: space-evenly;
     margin-top: 10rem;
- }
+}
 
- .fact-box {
+.fact-box {
     border: 1px solid #FF900E;
     border-radius: .8rem;
     text-align: center;
     padding: 3.5rem;
     transition: transform 1s ease;
- }
+}
 
- .fact-box:hover {
+.fact-box:hover {
     transform: rotate(360deg);
- }
+}
 
- .fact-number {
+.fact-number {
     color: var(--secondary-text);
     font-size: 4.5rem;
     font-weight: 600;
     margin: 1.5rem 0 1rem 0;
- }
+}
 
- .fact-title {
+.fact-title {
     color: var(--tertiary-text);
     font-size: 2rem;
     font-weight: 600;
- }
+}
 
- /* -------------------------------------------
+/* -------------------------------------------
         Sponsor section Styles
  --------------------------------------------*/
 
- .sponsor-text {
+.sponsor-text {
     text-align: center;
     width: 60%;
     margin: 0 auto;
- }
+}
 
- .sponsor-logos {
+.sponsor-logos {
     justify-content: space-between;
     margin-top: 5rem;
- }
+}
 
- .logo {
+.logo {
     filter: grayscale();
- }
+}
 
- /* -------------------------------------------
+/* -------------------------------------------
+        contact us Styles
+ --------------------------------------------*/
+
+.contact-us h2 {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 4.5rem auto 0;
+}
+
+label {
+    font-size: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+input [type="checkbox"],
+textarea,
+select {
+    font-size: 2rem;
+    margin-bottom: .7rem;
+    padding: 1rem 2.5rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    margin-left: 14rem;
+}
+
+select {
+    padding-right: 12.6rem;
+}
+
+input[type="checkbox"] {
+    margin-left: 9rem;
+    margin-right: 1rem;
+}
+
+textarea {
+    margin-top: 3rem;
+}
+
+/* -------------------------------------------
         footer Styles
  --------------------------------------------*/
 
- .footer {
+.footer {
     margin-top: 13rem;
     padding: 4rem 0;
     text-align: center;
- }
+}
 
+/*--------------------------------- 
+            Media Query 
+ ----------------------------------*/
 
- /* Media Query */
+@media only screen and (max-width: 576px) {
 
- @media only screen and (max-width: 576px) {
+    /* Common styles */
     html {
-        font-size: 35%;
+        font-size: 40%;
+    }
+
+    section {
+        margin-top: 7rem;
+        padding: 0 2rem;
     }
 
     .container {
@@ -290,12 +349,16 @@ button .small-text {
         flex-direction: column;
     }
 
-    /* Navbar */
-    .navbar {
-        flex-direction: column;
-
+    /* Banner Styles */
+    .banner {
+        margin-top: 5rem;
     }
 
+    .banner-title {
+        font-size: 5rem;
+    }
+
+    /* Navbar */
     .nav {
         gap: 1rem;
     }
@@ -303,21 +366,29 @@ button .small-text {
     /* Gallery Styles */
 
     .photo-gallery {
-        grid-template-columns: repeat(1, 1fr);
-        align-items: start;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
     }
 
     .photos {
         grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        margin-top: 7rem;
+        justify-items: center;
     }
 
     .photos img {
-       
+        width: 70%;
     }
 
     /* Some Facts styles */
     .fact-boxes {
-        gap: 2rem
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        margin-top: 6rem;
     }
 
     /* Feature section styles */
@@ -326,7 +397,8 @@ button .small-text {
     }
 
     .feature-img {
-        width: 100%;
+        width: 70%;
+        margin: 0 auto;
     }
 
     .btn-large {
@@ -334,14 +406,34 @@ button .small-text {
     }
 
     /* Sponsor Style */
-    .sponsor-text, .fact-description {
+    .sponsor-text,
+    .fact-description {
         width: 100%;
         margin: 0 auto;
         text-align: center;
     }
 
     .sponsor-logos {
-        gap: 2rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        flex-wrap: wrap;
     }
 
- }
+    .sponsor-logos .logo {
+        width: 30%;
+    }
+
+    /* Contact us styles */
+    form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Footer styles */
+    .footer {
+        margin-top: 7rem;
+    }
+
+}
