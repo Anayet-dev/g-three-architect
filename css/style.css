@@ -1,15 +1,15 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700&display=swap");
 
 /* Text and color Variables */
 :root {
     --primary-text: #131313;
     --secondary-text: #424242;
     --tertiary-text: #727272;
-    --btn-bg: #FF900E;
+    --btn-bg: #ff900e;
     --btn-text: #fff;
     --section-bg: rgba(255, 144, 14, 0.1);
-    --work-sans: 'Work Sans', sans-serif;
+    --work-sans: "Work Sans", sans-serif;
 }
 
 /* Css reset code */
@@ -54,7 +54,7 @@ p {
     border: 0;
     font-size: 2rem;
     padding: 2rem 2.5rem;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     margin-top: 3.2rem;
     font-weight: 600;
 }
@@ -158,6 +158,10 @@ section {
     padding-right: 6rem;
 }
 
+.gallery-texts {
+    padding: 0 1rem;
+}
+
 .quick-list {
     color: var(--tertiary-text);
 }
@@ -181,13 +185,13 @@ section {
 
 article {
     padding: 2rem;
-    box-shadow: 0px .4rem 3rem rgba(0, 0, 0, 0.06);
-    border-radius: .8rem;
+    box-shadow: 0px 0.4rem 3rem rgba(0, 0, 0, 0.06);
+    border-radius: 0.8rem;
     margin-top: 1rem;
 }
 
 .articles h2 {
-    border-left: .5rem solid var(--btn-bg);
+    border-left: 0.5rem solid var(--btn-bg);
     padding-left: 2rem;
 }
 
@@ -226,8 +230,8 @@ button .small-text {
 }
 
 .fact-box {
-    border: 1px solid #FF900E;
-    border-radius: .8rem;
+    border: 1px solid #ff900e;
+    border-radius: 0.8rem;
     text-align: center;
     padding: 3.5rem;
     transition: transform 1s ease;
@@ -278,8 +282,12 @@ button .small-text {
 }
 
 form {
-    width: 50%;
-    margin: 4.5rem auto 0;
+    width: 60%;
+    margin: 7rem auto 0;
+    padding: 5rem;
+    text-align: center;
+    box-shadow: 0px 0.4rem 3rem rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
 }
 
 label {
@@ -293,7 +301,7 @@ input [type="checkbox"],
 textarea,
 select {
     font-size: 2rem;
-    margin-bottom: .7rem;
+    margin-bottom: 0.7rem;
     padding: 1rem 2.5rem;
 }
 
@@ -334,6 +342,10 @@ textarea {
     /* Common styles */
     html {
         font-size: 40%;
+    }
+
+    p {
+        font-size: 2.2rem;
     }
 
     section {
@@ -419,21 +431,44 @@ textarea {
         align-items: center;
         gap: 3rem;
         flex-wrap: wrap;
+        margin: 12rem 0;
     }
 
     .sponsor-logos .logo {
         width: 30%;
+        filter: none;
     }
 
     /* Contact us styles */
     form {
         width: 100%;
-        margin: 0 auto;
+        margin: 7rem 0 0;
+        padding: 0;
+        text-align: left;
+        text-align: center;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        margin-left: 1rem;
+        padding-right: 5rem;
+    }
+
+    select {
+        padding-right: 2rem;
+    }
+
+    input[type="checkbox"] {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    text-area {
+        width: 10rem;
     }
 
     /* Footer styles */
     .footer {
         margin-top: 7rem;
     }
-
 }
