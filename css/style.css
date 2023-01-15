@@ -127,7 +127,7 @@ section {
 .banner {
     text-align: center;
     margin-top: 10rem;
-    padding: 0 2rem;
+    padding: 0 12rem;
 }
 
 .banner-title {
@@ -366,6 +366,7 @@ textarea {
     /* Banner Styles */
     .banner {
         margin-top: 5rem;
+        padding: 0 2rem;
     }
 
     .banner-title {
