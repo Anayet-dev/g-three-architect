@@ -302,16 +302,18 @@ textarea,
 select {
     font-size: 2rem;
     margin-bottom: 0.7rem;
-    padding: 1rem 2.5rem;
+    padding: 1rem 1rem;
 }
 
 input[type="text"],
 input[type="email"] {
-    margin-left: 14rem;
+    margin-left: 13rem;
+    padding-right: 7rem;
 }
 
 select {
-    padding-right: 12.6rem;
+    padding-right: 11.6rem;
+    margin-left: 2rem;
 }
 
 input[type="checkbox"] {
