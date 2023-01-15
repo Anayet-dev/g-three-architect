@@ -279,7 +279,11 @@ button .small-text {
 
  @media only screen and (max-width: 576px) {
     html {
+        font-size: 35%;
+    }
 
+    .container {
+        padding: 0 1rem;
     }
 
     .flex {
@@ -298,7 +302,18 @@ button .small-text {
 
     /* Gallery Styles */
 
-    
+    .photo-gallery {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: start;
+    }
+
+    .photos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .photos img {
+       
+    }
 
     /* Some Facts styles */
     .fact-boxes {
